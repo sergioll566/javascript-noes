@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            place-content: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            flex-direction: column;
+            align-items: center;
+            gap: 5vh;
+        }
+        button{
+            border-radius: 2vh;
+            background-color: #0055ff;
+            color: #eee;
+            padding: 2vh;
+            text-align: center;
+            border: 0;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>Adivina el nombre de la cuarteto referencia</h1>
+    <p id="instrucciones"></p>
+    <p id="pista"></p>
+    <input type="text" id="input-field" placeholder="introduce aqui el personaje que crees que es:">
+    <button onclick="verificar_personaje()">verificar</button>
+    <button onclick="pedir_pista()">pedir pista!</button>
+    <script src="/proyecto-loops.js"></script>
+</body>
+</html>
