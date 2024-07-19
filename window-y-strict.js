@@ -1,6 +1,9 @@
 /*
 # LORE
-
+El modo estricto se agrego en 2009 en Ecmascript 5
+para agregar funcionalidades de seguridad a javascript
+este modo se tiene que prender declarativamente.
+Estas son las cosas que cambian al usar strict mode.
 */
 "use strict";
 
@@ -46,3 +49,21 @@ const myObject = {
     }
 };
 console.log(myObject.getValue());
+
+
+/*
+# MAS LORE
+window === global === globalThis
+
+Son objetos de contexto global, por defecto las funciones tienen
+bindeado este contexto
+(algo que se quita en el modo estricto)
+en el caso exclusivo de usar js en el navegador 
+el contexto global especificamente es window
+ya que tiene metodos y propiedades exclusivos de un 
+navegador como...
+
+document
+alert
+etc...
+*/
