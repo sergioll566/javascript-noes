@@ -17,6 +17,7 @@ console.log(this.name)
 
 // with arrow function
 const newgreeting = (name)=>{
+    console.log(this)
     console.log(this.name)
     this.name = name
     return `Hi, ${name}`
@@ -31,4 +32,19 @@ const newOtherFunction = ()=>{
 }
 newOtherFunction()
 
-console.log(this.name)
+console.log(globalThis.name)
+
+
+const object = {
+    taka:"tikia",
+    method:function(){
+        const tiki = ()=>{
+            console.log(this.taka)
+        }
+        tiki()
+    },
+    method2:()=>{console.log(this.taka)}
+
+}
+object.method()
+object.method2()
