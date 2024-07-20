@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stack books</title>
+    <link rel="stylesheet" href="/stack-books.css">
+</head>
+<body>
+    
+<aside id="list-books">
+
+</aside>
+    <main id="main-content">
+        <img id="icon-page" src="https://static.vecteezy.com/system/resources/previews/026/912/031/original/stack-of-books-generative-ai-png.png" alt="books icon">
+        <div id="form-content">
+            <label for="name-book-field">enter a book name</label>
+            <input type="text" id="name-book-field" placeholder="type here:">
+        </div>
+        <button id="btn-push-book" onclick="add_book()">add book</button>
+        <button id="btn-remove-last-book" onclick="remove_last_book()">remove last book</button>
+
+    </main>
+
+<script src="/stack-books.js"></script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+body{
+    display: flex;
+    width: 100vh;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    gap: 5vh;
+}
+
+
+#list-books{
+    width: 20vh;
+    height: 50vh;
+    background-color: #eee;
+    border-radius: 1vh;
+    box-shadow: inset 0 0 1vh #00000033;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1vh;
+    padding: 2vh;
+    overflow-y: auto;
+    overflow-x:hidden ;
+}
+hr{
+    width: 100%;
+}
+#list-books > span{
+    color:#0099ff;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+#icon-page{
+    width: auto;
+    height: 20vh;
+}
+#main-content{
+    height: 50vh;
+    width: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+#form-content{
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content:flex-end ;
+    gap: 2vh;
+}
+
+button{
+    padding: 1vh 2vh;
+    border: .4vh solid #0099ff;
+    background-color: #15a1ff;
+    border-radius: .4vh;
+    color: #eee;
+    font-weight: bold;
+    transition: .2s;
+}
+#btn-remove-last-book{
+    background-color: #fd4727;
+    border-color: #fd3a18;
+}
+button:hover{
+    background-color: #0099ff;
+}
+button:active,#btn-remove-last-book:active{
+    transition: 0s;
+    background-color: #d2edff;
+    border-color: #bbe4ff;
+}
+
+
+#name-book-field{
+    padding: 1vh 2vh ;
+}
